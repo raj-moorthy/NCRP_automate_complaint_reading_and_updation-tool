@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nilgiris District Police Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="police-bg">
+
+<<div class="container">
+    <div class="card glass login-box">
+        <img src="/static/police_logo.png" width="80">
+        <h2>Nilgiris District Police</h2>
+
+        <form method="post">
+            <input type="text" name="police_id" placeholder="Police ID" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button class="btn">Login</button>
+        </form>
+
+        <a href="/register">New Officer Registration</a>
+
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</div>
+
+
+</body>
+</html>
